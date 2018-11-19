@@ -12,7 +12,7 @@ Example :
 
 {
   "ip": "your current ip address",
-  "hostname": "108-243-202-29.lightspeed.sntcca.sbcglobal.net",
+  "hostname": "hostname",
   "city": "Current city name",
   "region": "Current region",
   "country": "Country Name",
