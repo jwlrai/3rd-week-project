@@ -1,8 +1,8 @@
-# This web application is created for the purpose of providing information about the current weather status and the weather forcast for the current location of the users.
+## This web application is created for the purpose of providing information about the current weather status and the weather forcast for the current location of the users.
 
 In this web application i have used two different api.
 
-For the detection of the users current location ,city, region and country i have used http://ipinfo.io Api
+###For the detection of the users current location ,city, region and country i have used http://ipinfo.io Api
 
 ipinfo.io Api Details :
 url : http://ipinfo.io/?token={api_key},
@@ -18,9 +18,8 @@ response : json
   "org": "Isp name"
 }
 
-#For the current weather status: temprature, air pollution and weather forcast i have used https://openweathermap.org
-# Api
-#https://openweathermap.org Api Details for
+###For the current weather status: temprature, air pollution and weather forcast i have used https://openweathermap.org Api
+###https://openweathermap.org Api Details for
 
 	#Current weather temperature
 

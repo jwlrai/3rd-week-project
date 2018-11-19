@@ -2,7 +2,7 @@
     var obj = {
         lon:null,
         lat:null,
-        key:'',
+        key:'a879ed2f135e549dba0785c8f8b3b0ba',
         locationData:null,
         currentWeather:null,
         forCastData:null,
@@ -47,7 +47,9 @@ console.log(obj);
                                            for(var i=0; i < obj.forCastData.list.length;i++){
                                             forEle +='<li>';
                                             forEle +=`<p><span class="itm">Time</span>:<span>${obj.forCastData.list[i].dt_txt.split(' ').join('<span class="red">')}</span></span></p>`;
-                                            forEle +=`<p><span class="itm">Temp</span>:<span>${obj.forCastData.list[i].main.temp_min}-${obj.forCastData.list[i].main.temp_max}</span></p>`;
+                                            var min = (9/5 * (parseInt(obj.forCastData.list[i].main.temp_min) - 273) + 32).toFixed(2) + ' F';
+                                            var max = (9/5 * (parseInt(obj.forCastData.list[i].main.temp_max) - 273) + 32).toFixed(2) + ' F';
+                                            forEle +=`<p><span class="itm">Temp</span>:<span>${min} &nbsp;- &nbsp;${max}</span></p>`;
                                             forEle +=`<p><span class="itm">Humidity</span>:<span>${obj.forCastData.list[i].main.humidity}</span></p>`;
                                             forEle +=`<p><span class="itm">Wind</span>:<span>${obj.forCastData.list[i].wind.speed} mph</span></p>`;
                                             forEle +=`<p><span class="itm">Weather</span>:<span>${obj.forCastData.list[i].weather[0].description}</span></p>`;
@@ -59,7 +61,7 @@ console.log(obj);
                                            for(var i=0; i < obj.airPolData.data.length;i++){
                                             polEle +='<li>';
                                             polEle +=`<p><span class="itm">Precision</span>:<span>${obj.airPolData.data[i].precision}</span></p>`;
-                                            polEle +=`<p><span class="itm">Pressure</span>:<span>${obj.airPolData.data[i].pressure}</span></p>`;
+                                            polEle +=`<p><span class="itm">Pressure</span>:<span>${obj.airPolData.data[i].pressure.toFixed(6)}</span></p>`;
                                             polEle +=`<p><span class="itm">Value</span>:<span>${(obj.airPolData.data[i].value * 1000000).toFixed(6)} ppm</span></p>`;
                                             polEle +='</li>';
                                            }

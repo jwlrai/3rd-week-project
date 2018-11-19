@@ -4,6 +4,10 @@
     box-sizing: border-box;
 
 }
+body{
+    background-color: #fff;
+    color:black;
+}
 h1,h2{
     font-family: 'Archivo', sans-serif;
     color: #022144;
@@ -29,7 +33,7 @@ p{
     font-size:1.2rem;
 }
 .red{
-    color:red;
+    color:#ca0e0e;
 }
 main> p{
     margin-bottom:30px;
@@ -81,9 +85,16 @@ section ul li span:first-child{
    width:50px;
 
 }
+#forc ul li span:first-child{
+    width:65px;
+}
+
 section ul li span:last-child{
     padding:0 5px;
     text-transform: capitalize;
+}
+#forc ul li span:last-child{
+    padding:0 8px;
 }
 .itm{
     color:#0505ec;
@@ -96,4 +107,5 @@ section ul li span:last-child{
     border-top:1px solid #d1d1d1;
     margin-top:50px;
     padding:40px 0;
+    font-size:.8rem;
 }
