@@ -4,7 +4,7 @@ This web application is created for the purpose of providing information about t
 
 ### For the detection of the users current location, city, region and country i have used http://ipinfo.io Api
 
-####  ipinfo.io Api Details :
+####  http://ipinfo.io Api Details :
 ```
 Url : http://ipinfo.io/?token={api_key},
 Response Type : json
