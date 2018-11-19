@@ -6,8 +6,10 @@ This web application is created for the purpose of providing information about t
 
 #### * ipinfo.io Api Details :
 ```
-url : http://ipinfo.io/?token={api_key},
-response : json
+Url : http://ipinfo.io/?token={api_key},
+Response Type : json
+Example :
+
 {
   "ip": "your current ip address",
   "hostname": "108-243-202-29.lightspeed.sntcca.sbcglobal.net",
@@ -43,8 +45,8 @@ response : json
 ```
 ##### * Current weather forcast
 ```	
-	Url :http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={api_key}
-	Response Type :json
+	Url : http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={api_key}
+	Response Type : json
 	Example :
 
 	"city":{"id":1851632,"name":"Shuzenji",
@@ -73,8 +75,8 @@ response : json
 ```
 ##### * Current air-pollution
 ```
-	Url:http://api.openweathermap.org/pollution/v1/co/{latitude},{longitude}/current.json?appid={api_key}
-	Response Type:json
+	Url : http://api.openweathermap.org/pollution/v1/co/{latitude},{longitude}/current.json?appid={api_key}
+	Response Type : json
 	Response Format
 
 		#time => ISO 8601 timestamp
