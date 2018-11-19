@@ -20,11 +20,11 @@ response : json
 }
 ```
 ### For the current weather status: temprature, air pollution and weather forcast i have used https://openweathermap.org Api
-```
+
 #### https://openweathermap.org Api Details for
 
-	#Current weather temperature
-
+##### Current weather temperature
+```
 	# url: http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}
 	# response : json
 	{"coord":{"lon":139,"lat":35},
@@ -38,9 +38,9 @@ response : json
 	"id":1851632,
 	"name":"Shuzenji",
 	"cod":200}
-
-	#Current weather forcast
-	
+```
+##### Current weather forcast
+```	
 	#url :http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={api_key}
 	#response :json
 	"city":{"id":1851632,"name":"Shuzenji",
@@ -66,8 +66,9 @@ response : json
         		"sys":{"pod":"d"},
         		"dt_txt":"2014-07-23 09:00:00"}
         ]}
-
-	#Current air-pollution
+```
+##### Current air-pollution
+```
 	#url:http://api.openweathermap.org/pollution/v1/co/{latitude},{longitude}/current.json?appid={api_key}
 	#response:json
 	#response format
