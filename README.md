@@ -4,7 +4,7 @@ This web application is created for the purpose of providing information about t
 
 ### For the detection of the users current location, city, region and country i have used http://ipinfo.io Api
 
-#### * ipinfo.io Api Details :
+####  ipinfo.io Api Details :
 ```
 Url : http://ipinfo.io/?token={api_key},
 Response Type : json
@@ -25,7 +25,7 @@ Example :
 
 #### https://openweathermap.org Api Details for
 
-##### * Current weather temperature
+#####  Current weather temperature
 ```
 	Url : http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}
 	Response Type : json
@@ -43,7 +43,7 @@ Example :
 	"name":"Shuzenji",
 	"cod":200}
 ```
-##### * Current weather forcast
+#####  Current weather forcast
 ```	
 	Url : http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={api_key}
 	Response Type : json
@@ -73,7 +73,7 @@ Example :
         		"dt_txt":"2014-07-23 09:00:00"}
         ]}
 ```
-##### * Current air-pollution
+#####  Current air-pollution
 ```
 	Url : http://api.openweathermap.org/pollution/v1/co/{latitude},{longitude}/current.json?appid={api_key}
 	Response Type : json
