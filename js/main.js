@@ -6,7 +6,15 @@
         locationData:null,
         currentWeather:null,
         forCastData:null,
-        airPolData:null
+        airPolData:null,
+        error:function(type){
+            if(type=='geoerror'){
+                jq('main').empty().css('min-height','600px').append('<p>"Geolocation is not supported by this browser."</p>')
+            }else if(type=='geoerrorpermission'){
+                jq('main').empty().css('min-height','600px').append('<p>"Unable to get Geolocation due to permission deny"</p>')
+
+            }
+        }
        
     };
     if (navigator.geolocation) {
@@ -98,61 +106,15 @@ console.log(obj);
             });// info end
 
            
+        },function(e){
+            obj.error('geoerrorpermission');
         });// navigator end
     } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        console.log('sfdsd');
+        obj.error('geoerror');
+      
     }
 
 
-    // jq.ajax({
-    //     url:`http://ipinfo.io/?token=87d575059b114f`,
-    //    method:'GET',
-    //    dataType:'json',
-    //    success:function(data){
-    //        console.log(data);
-    //    }
-
-//    });
-    // var obj = {
-    //     city:,
-    //     region:'',
-        
-    // }
-//     var dat = new Date().toISOString();
-// console.log(dat);
-//     var key = 'a879ed2f135e549dba0785c8f8b3b0ba';
-//     console.log(navigator.geolocation.getCurrentPosition(function(position){
-//         var lon = parseInt(position.coords.longitude);
-//         var lat =  parseInt(position.coords.latitude);
-//         console.log( lat);
-//         jq.ajax({
-//              url:`http://api.openweathermap.org/pollution/v1/co/${lat},${lon}/current.json?appid=${key}`,
-//             // url:`http://api.openweathermap.org/pollution/v1/co/0.0,10.0/2016-03-01Z.json?appid=${key}`,
-//             method:'GET',
-//             success:function(data){
-//                 console.log(data);
-//             }
-    
-//         });
-        // $.getJSON('http://ipinfo.io', function(data){
-        //     console.log(data);
-        // });
-
-    //     jq.ajax({
-    //         url:`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`,
-    //        // url:`http://api.openweathermap.org/pollution/v1/co/0.0,10.0/2016-03-01Z.json?appid=${key}`,
-    //        method:'GET',
-    //        dataType:'json',
-    //        success:function(data){
-              
-    //            console.log(data);
-    //        }
-   
-    //    });
-    //    $.getJSON('http://ipinfo.io', function(data){
-    //        console.log(data);
-    //    });
-        
-    // }));
     
 })(jQuery.noConflict())
