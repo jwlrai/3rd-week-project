@@ -1,6 +1,6 @@
 # Current Weather Status & the Forecast
 
-This web application is created for the purpose of providing information about the current weather status and the weather forcast for the current location of the users. In this web application i have used two different api.
+This web application is created for the purpose of providing information about the current weather status and the weather forecast for the current location of the users. In this web application i have used two different api.
 
 ### For the detection of the users current location, city, region and country i have used http://ipinfo.io Api
 
@@ -21,7 +21,7 @@ Example :
   "org": "Isp name"
 }
 ```
-### For the current weather status: temprature, air pollution and weather forcast i have used https://openweathermap.org Api
+### For the current weather status: temprature, air pollution and weather forecast i have used https://openweathermap.org Api
 
 #### https://openweathermap.org Api Details for
 
@@ -43,7 +43,7 @@ Example :
 	"name":"Shuzenji",
 	"cod":200}
 ```
-#####  Current weather forcast
+#####  Current weather forecast
 ```	
 	Url : http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={api_key}
 	Response Type : json
