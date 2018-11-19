@@ -25,8 +25,10 @@ response : json
 
 ##### * Current weather temperature
 ```
-	# url: http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}
-	# response : json
+	Url : http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}
+	Response Type : json
+	Example :
+
 	{"coord":{"lon":139,"lat":35},
 	"sys":{"country":"JP","sunrise":1369769524,"sunset":1369821049},
 	"weather":[{"id":804,"main":"clouds","description":"overcast clouds","icon":"04n"}],
@@ -41,8 +43,10 @@ response : json
 ```
 ##### * Current weather forcast
 ```	
-	#url :http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={api_key}
-	#response :json
+	Url :http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={api_key}
+	Response Type :json
+	Example :
+
 	"city":{"id":1851632,"name":"Shuzenji",
 	"coord":{"lon":138.933334,"lat":34.966671},
 	"country":"JP",
@@ -69,9 +73,10 @@ response : json
 ```
 ##### * Current air-pollution
 ```
-	#url:http://api.openweathermap.org/pollution/v1/co/{latitude},{longitude}/current.json?appid={api_key}
-	#response:json
-	#response format
+	Url:http://api.openweathermap.org/pollution/v1/co/{latitude},{longitude}/current.json?appid={api_key}
+	Response Type:json
+	Response Format
+	
 		#time => ISO 8601 timestamp
 		#location=>object - location for which data is provided
 			#latitude => float - latitude for returned data 
