@@ -66,6 +66,8 @@ console.log(obj);
                                             polEle +='</li>';
                                            }
                                            jq('table tr td span.temp').empty().append(9/5 * (parseInt(obj.currentWeather.main.temp_max) - 273) + 32 + ' F');
+                                           jq('table tr td span.hum').empty().append(obj.currentWeather.main.humidity);
+                                           jq('table tr td span.win').empty().append(obj.currentWeather.wind.speed+' Mph');
                                            jq('table tr td span.des').empty().append(obj.currentWeather.weather[0].description);
                                           
                                            jq('table tr td span.add').empty().append(`${obj.locationData.city}, ${obj.locationData.region}, ${obj.locationData.country}`);
