@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Archivo|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
+    <title>Current Weather Status & the Forcast</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Current Weather Status & the Forcast</h1>
+        </header>
+        <main>
+            <p><span class="ov">Overview : &nbsp;&nbsp;</span> 
+                This website is created to provide people with the information of the current weather status and the forcast of their current situated location.
+            </p>
+            <section>
+                <h2>Your Current location</h2>
+                <table id="gen">
+                    <tr>
+                        <td>Temperature</td>
+                        <td>: <span class="temp gen"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Weather</td>
+                        <td>: <span class="des gen"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Address </td>
+                        <td>: <span class="add gen"></span></td>
+                    </tr>                    
+                    <tr>
+                        <td>Geo-location</td>
+                        <td>: <span class="loc gen">11,111</span></td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>Current  Air-polution ( Carbon-monooxide ) Status</h2>
+                <p>Carbon monoxide (CO) is a deadly, colorless, odorless, poisonous gas. Because of it's odorless, colorless properties and otherwise undetectable to the human senses, people may not know that they are being exposed. According to <a href="https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers">CONSUMER PRODUCT SAFETY COMISSION</a> most people will not experience any symptoms from prolonged exposure to CO levels of approximately 1 to 70 ppm but some heart patients might experience an increase in chest pain.
+                        So for the awareness of people this website provides the stauts of the air polution of surroundings</p>
+                <div id="pol">
+                    <ul>
+                        <li>
+                                <p><span class="itm">Precision</span>:<span></span></p>
+                                <p><span class="itm">Pressure</span>:<span></span></p>
+                                <p><span class="itm">Value</span>:<span></span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <h2>5 day / 3 hour Forecast </h2>
+                <div id="forc">
+                        <ul>
+                            <li>
+                                <p><span class="itm">Time</span>:<span></span></p>
+                                <p><span class="itm">Temp</span>:<span></span></p>
+                                <p><span class="itm">Humidity</span>:<span></span></p>
+                                <p><span class="itm">Wind</span>:<span>2 mph</span></p>
+                                <p><span class="itm">Weather</span>:<span>2 mph</span></p>
+                            </li>
+                            <li>
+                                    <p><span class="itm">Time</span>:<span></span></p>
+                                    <p><span class="itm">Temp</span>:<span></span></p>
+                                    <p><span class="itm">Humidity</span>:<span></span></p>
+                                    <p><span class="itm">Wind</span>:<span>2 mph</span></p>
+                                    <p><span class="itm">Weather</span>:<span>2 mph</span></p>
+                                </li>
+                                <li>
+                                        <p><span class="itm">Time</span>:<span></span></p>
+                                        <p><span class="itm">Temp</span>:<span></span></p>
+                                        <p><span class="itm">Humidity</span>:<span></span></p>
+                                        <p><span class="itm">Wind</span>:<span>2 mph</span></p>
+                                        <p><span class="itm">Weather</span>:<span>2 mph</span></p>
+                                    </li>
+                        </ul>
+                </div>
+                
+            </section>
+            
+
+        </main>
+        <footer>
+            <p>Copyright &copy; 2018 Current Weather Status & the Forcast
+
+                </p>
+        </footer>
+    </div>
+ 
+    <!-- <iframe src="https://tile.openweathermap.org/map/clouds/1/37.7749295/-122.4194155.png?appid=f86dce134fc72b93c4af031e62c2d210" height="200" width="300"></iframe> -->
+    <script src="js/main.js"></script>
+</body>
+</html>
