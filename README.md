@@ -1,10 +1,10 @@
-#Current Weather Status & the Forcast
+# Current Weather Status & the Forcast
 
 This web application is created for the purpose of providing information about the current weather status and the weather forcast for the current location of the users. In this web application i have used two different api.
 
-###For the detection of the users current location ,city, region and country i have used http://ipinfo.io Api
+### For the detection of the users current location ,city, region and country i have used http://ipinfo.io Api
 ```
-ipinfo.io Api Details :
+#### ipinfo.io Api Details :
 url : http://ipinfo.io/?token={api_key},
 response : json
 {
@@ -18,8 +18,9 @@ response : json
   "org": "Isp name"
 }
 ```
-###For the current weather status: temprature, air pollution and weather forcast i have used https://openweathermap.org Api
-###https://openweathermap.org Api Details for
+### For the current weather status: temprature, air pollution and weather forcast i have used https://openweathermap.org Api
+```
+#### https://openweathermap.org Api Details for
 
 	#Current weather temperature
 
@@ -77,4 +78,6 @@ response : json
 			#value=>  float - carbon monoxide volume mixing ratio 
 			#pressure => float - atmospheric pressure at the point of measurement, hPa. Recommended for scientific use at pressure levels between 215 and 0.00464 hPa 
 			#precision => float - measurement precision
+
+```
 
