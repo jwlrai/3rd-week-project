@@ -1,4 +1,4 @@
-# Current Weather Status & the Forcast
+# Current Weather Status & the Forecast
 
 This web application is created for the purpose of providing information about the current weather status and the weather forcast for the current location of the users. In this web application i have used two different api.
 
